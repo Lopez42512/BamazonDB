@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
     password: 'root',
     database: 'bamazonDB'
 });
-hello();
+// hello();
 function hello(){
     connection.connect(function(err){
     if(err) throw err;
@@ -26,7 +26,7 @@ function menu(){
             name: 'choice',
             type: 'list',
             message: 'what would you like to do',
-            choices: ['Shop', 'Manager', 'SuperVisor', 'Done']
+            choices: ['Shop', 'Manager', 'Done']
 
     //This run a program based off the user choice   
     }).then(function(answer){
@@ -39,10 +39,10 @@ function menu(){
                 break;
             case 'Done':
                 connection.end();
-        }
+        };
     })
 }
 
-module.exports = hello;
+module.exports = menu();
 
 // console.log(fs)

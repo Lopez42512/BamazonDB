@@ -1,7 +1,7 @@
 //npm install to get program to run
 var mysql = require('mysql');
 var inquirer = require('inquirer');
-var menu = require('./menu');
+var menu2 = require('./menu');
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -64,6 +64,7 @@ function purchaseAmt(res){
             var price = answer.stock * res.price
             var upStock = res.stock - answer.stock;
             updateItem(upStock, res, price);
+          
         }
     })
 }
@@ -85,8 +86,10 @@ function updateItem(upStock,res,price) {
     // logs the actual query being run
     // console.log(query.sql);
     console.log(`Your total for product: ${res.product_name} will be $ ${price}`);
-    menu();
+    // menu2();
 }
+
+
 
 module.exports = displayProduct
 

@@ -2,6 +2,7 @@
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 var menu = require('./menu');
+var managerPassword = require('./password')
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -13,9 +14,6 @@ var connection = mysql.createConnection({
     password: 'root',
     database: 'bamazonDB'
 });
-
-//Temporary password for manager mode
-var managerPassword = 'hello'
 
 //Validate the user password to gain access to manager display
 function password() {
