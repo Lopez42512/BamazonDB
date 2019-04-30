@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
     password: 'root',
     database: 'bamazonDB'
 });
-// hello();
+hello();
 function hello(){
     connection.connect(function(err){
     if(err) throw err;
@@ -43,6 +43,6 @@ function menu(){
     })
 }
 
-module.exports = menu();
+module.exports = menu;
 
 // console.log(fs)
