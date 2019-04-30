@@ -2,6 +2,14 @@
 
 BamazonDB uses Mysql and node.js to offer the user a simulated shopping and manager experience.
 
+## Technologies
+* Node.ls
+* Mysql
+* Javascript
+
+## Video of the app running
+https://drive.google.com/file/d/16DzC0hRUzugCRDbug5ae_KURQBcbEQ86/view?usp=sharing
+
 ### The password to access the manager menu is hello
 
 ### Installation
